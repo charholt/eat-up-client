@@ -9,9 +9,9 @@ Anyone can browse Eat Up and view food related events, but to really harness the
 #### Links:
 [Deployed Site](https://team-cbam.github.io/eat-up-client/)
 
-[Back End Github Repo](https://github.com/team-cbam/eat-up-backend)
+[Back End Github Repo](https://github.com/charholt/eat-up-backend)
 
-[Back End Deployed Site](https://shielded-wildwood-50568.herokuapp.com/)
+[Back End Deployed Site](https://guarded-reef-30901.herokuapp.com/)
 
 #### TECHNOLOGIES USED:
 - HTML

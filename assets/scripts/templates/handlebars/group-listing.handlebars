@@ -1,0 +1,14 @@
+{{#each groups as |group|}}
+  <div class="container handlebar group-card" href="#group-details" role="button" aria-expanded="false" data-id="{{group._id}}">
+      <div class="card bg-light mb-3" style="max-width: 20rem;"></div>
+        <div class="card-header" data-id="{{group._id}}"><h2 data-id="{{group._id}}">{{group.name}}</h2></div>
+        <div class="card-body" data-id="{{group._id}}" style="background-image:  background-size: cover">
+          <h4 class="card-title" data-id="{{group._id}}"> {{group.name}}
+          </h4>
+          <p class="card-text" data-id="{{group._id}}">
+            <b>Description</b> {{group.description}} </br>
+            <b>Location:</b> {{group.guidelines}}<br>
+          </p>
+        </div>
+  </div>
+{{/each}}

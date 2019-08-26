@@ -1,0 +1,20 @@
+{{#if group}}
+<div class="ml-5 mr-2">
+  <div><h2> {{group.name}}</h2></div>
+  <div class="d-flex justify-content-end">
+    <button class="back-to-events">Back to Events</button>
+  </div> <br>
+    <p>
+      <b>Group Name:</b> {{group.name}}<br>
+      <b>Location:</b> {{group.description}}<br>
+      <b>Description:</b> {{group.guidelines}}<br>
+      <b>Owner:</b> {{group.owner}}<br>
+      {{#if user}}
+        <button class="btn btn-primary attending" data-attendee="{{store.user.id}}">Join Group</button>
+      {{else}}
+      <p> Want to join this group? Sign in and enjoy the fun!</a>
+      {{/if}}
+    </p>
+  </div>
+</div>
+{{/if}}

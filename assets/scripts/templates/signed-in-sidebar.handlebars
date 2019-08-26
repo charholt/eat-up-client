@@ -14,6 +14,7 @@
 <div class='row justify-content-center mt-2 p-4'>
   <!-- contains both rsvp'd and owned events -->
   <button id="see-all-events" class="event-button">See All Events</button>
+  <button id="see-all-groups" class="event-button">See All Groups</button>
   <!-- <button id="my-events" class="event-button">See My Events</button>
   <button id="my-rsvps" class="event-button">See My RSVP's</button> -->
 
@@ -21,6 +22,11 @@
 <!-- Create an event -->
   <button type="button" class="create-event" data-toggle="modal" data-target="#create-event-modal">
   Create Event
+  </button>
+
+<!-- Create an event -->
+  <button type="button" class="create-group" data-toggle="modal" data-target="#create-group-modal">
+  Create a Group
   </button>
 
   <!-- Modal for creating an event -->
@@ -50,6 +56,33 @@
     </div>
   </div>
 </div>
+
+<!-- Modal for creating an event -->
+<div class="modal fade" id="create-group-modal" tabindex="-1" role="dialog" aria-labelledby="createGroupModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createGroupModalCenterTitle">Create A Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Please fill in all information. </p>
+          <form enctype="multipart/form-data" id="create-group">
+            <div class="inputs" style="display: grid;">
+              <input type="text" placeholder="name" name="name">
+              <textarea name="description" cols="50" rows="10" placeholder="Write a description about your groups interest and intent!"></textarea>
+              <input type="text" name="guidelines" placeholder="Write some guidelines/by-laws for your group.">
+            </div>
+            <button>Create Group</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 <!-- <div id='my-created-events'>
 <form id='update-my-event'>
