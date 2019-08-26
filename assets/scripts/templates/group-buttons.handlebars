@@ -22,15 +22,15 @@
       <form id="update-event" enctype="multipart/form-data">
         <!-- name input -->
         <label for="name"> Enter event name: </label>
-        <input type=text name="name">
+        <input type=text name="name" name="group[name]">
 
         <!-- description -->
         <label for="description">  Describe your group. </label>
-        <input type=text name="description">
+        <input type=text name="group[description]" name="description">
 
         <!-- guidelines -->
         <label for="guidelines">  Write some bylaws/guidelines for your group! </label>
-        <input type=text name="guidelines">
+        <input type=text  name="guidelines" name "group[guidelines]">
 
         <button id='update-event' class="btn btn-primary" data-id="{{event._id}}">Update Group</button>
       </form>

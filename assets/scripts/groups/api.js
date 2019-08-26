@@ -5,7 +5,7 @@ const store = require('../store')
 
 const createGroup = formData => {
   return $.ajax({
-    url: config.apiUrl + '/group',
+    url: config.apiUrl + '/groups',
     data: {event: formData},
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -16,7 +16,7 @@ const createGroup = formData => {
 
 const updateGroup = (formData) => {
   return $.ajax({
-    url: config.apiUrl + '/group/' + store.group_id,
+    url: config.apiUrl + '/groups/' + store.group_id,
     method: 'PATCH',
     data: {
       event: formData
@@ -26,14 +26,14 @@ const updateGroup = (formData) => {
 
 const getAllGroups = function () {
   return $.ajax({
-    url: config.apiUrl + '/group',
+    url: config.apiUrl + '/groups',
     method: 'GET'
   })
 }
 
-const deleteGroup = eventId => {
+const deleteGroup = groupId => {
   return $.ajax({
-    url: config.apiUrl + '/group/' + eventId,
+    url: config.apiUrl + '/groups/' + groupId,
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token

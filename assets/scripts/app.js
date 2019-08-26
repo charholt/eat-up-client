@@ -4,9 +4,11 @@
 // const example = require('./example')
 const authEvents = require('./auth/events.js')
 const shindigsEvents = require('./shindigs/events.js')
+const groupEvents = require('./groups/events.js')
 
 $(() => {
   shindigsEvents.onGetAllEvents()
   authEvents.addHandlers()
   shindigsEvents.addHandlers()
+  groupEvents.addHandlers()
 })
